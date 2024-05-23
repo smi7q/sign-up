@@ -1,0 +1,155 @@
+Body {
+    display: grid;
+    place-items: center;
+    margin: 0;
+    height: 100vh;
+    background-color: #000000;
+    background-image: url("https://images.unsplash.com/photo-1465189684280-6a8fa9b19a7a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#email-error {
+    color: red;
+    font-size: 18px;
+    font-family: inherit;
+}
+
+button {
+    background: transparent;
+    border: 0;
+}
+
+.control {
+    border: 0;
+    border-radius: 8px;
+    width: 90%;
+    height: 56px;
+    padding: 0 16px;
+    background-color: rgba(255, 255, 255, 0.06);
+    color: #f9f9f9;
+    margin: 8px 0;
+    transition: background-color 0.4s, color 0.4s;
+}
+
+#bars {
+    margin: 8px 0;
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.06);
+}
+
+#bars div {
+    height: 6px;
+    border-radius: 8px;
+    transition: 0.4s;
+    width: 100%;
+}
+
+#bars.weak div {
+    background: #d0424f;
+    width: 33.33%;
+}
+
+#bars.medium div {
+    background: #e58448;
+    width: 66.66%;
+}
+
+#bars.strong div {
+    background: #1eb965;
+    width: 100%;
+}
+
+.form input.control::placeholder {
+    color: rgba(255, 255, 255, 0.25);
+}
+
+.form > button.control {
+    cursor: pointer;
+    width: 100%;
+    height: 56px;
+    padding: 0 16px;
+    background: #3a75dc;
+    color: #fff;
+    border: 0;
+    font-family: inherit;
+    font-size: 17px;
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.375s;
+}
+
+.card {
+    width: 320px;
+    padding: 100px 30px 32px;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.28);
+    backdrop-filter: blur(26px);
+    text-align: center;
+}
+.show-password {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .show-password input[type="checkbox"] {
+    display: none;
+  }
+  
+  .show-password label {
+    position: relative;
+    padding-left: 25px;
+    font-size: 14px;
+    color: #555;
+    cursor: pointer;
+  }
+  
+  .show-password label::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .show-password input[type="checkbox"]:checked + label::before {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .show-password label::after {
+    content: "Show Password";
+    position: absolute;
+    top: 50%;
+    left: 25px;
+    transform: translateY(-50%);
+    color: #555;
+    font-size: 14px;
+  }
+  
+  
+
+.card h2 {
+    font-size: 46px;
+    font-weight: 600;
+    margin: 0 0 6px;
+    color: #f9f9f9;
+}
+
+.card > h3 {
+    color: rgba(255, 255, 255, 0.5);
+    margin: 0 0 40px;
+    font-weight: 500;
+    font-size: 16px;
+}
